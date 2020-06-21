@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
           #colorlib-main-nav ul li a {
             font-size: 16px; } }
         #colorlib-main-nav ul li a:hover, #colorlib-main-nav ul li a:active, #colorlib-main-nav ul li a:focus {
-          color: black;
+          color: red;
           outline: none;
           text-decoration: none; }
       #colorlib-main-nav ul li.active a {
@@ -1220,3 +1220,46 @@ input[type="text"] {
   color: white;
   text-shadow: #0b0b0b 2px 2px 2px;
 }
+
+#logowhite1{
+  color: #0b0b0b;
+  text-shadow: #0b0b0b 1px 1px 1px;
+}
+
+#logowhite1:hover{
+  color: red;
+}
+
+#logowhite:hover {
+  color: red;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.ibtn {
+  background-color: #0b0b0b;
+  z-index: 1;
+  border: 1px solid #000;
+  bottom: 325px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  position: fixed;
+  right: 50px;
+  font-size: 13px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding: 7px;
+  text-decoration: none;
+}
+
+.ibtn:hover{
+  background-color: #b0e7fc;
+}
+

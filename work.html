@@ -40,12 +40,30 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+		<script src="js/respond.min.js"></script>
+
+		<script> window.onscroll  = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+				document.getElementById("back").style.display = "block";
+			}
+			else {
+				document.getElementById("back").style.display = "none";
+			}
+		}
+
+		function upFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+		</script>
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
 	</head>
@@ -62,8 +80,8 @@
 				<div class="row">
 					<div class="col-md-12">
 						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="work.html">Projecten</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="work.html">Projecten</a></li>
 							<li><a href="about.html">Over mij</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
@@ -71,7 +89,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="head-title">Gallery</h2>
+						<h2 class="head-title">Galerij</h2>
 						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
@@ -96,7 +114,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="index.html">Andy</a>
+							<a class="colorlib-logo" href="index.html" id="logowhite1">Andy</a>
 						</div>
 						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 					</div>
@@ -128,7 +146,7 @@
 												<div class="text-inner text-inner-right">
 													<h2><a href="work-single.html">TechDealsNL</a></h2>
 													<p>Herontwerp van een webshop die zich op de Nederlandse markt en doelgroep richt, eindopdracht van het vak Patterns.</p>
-													<p><a href="https://xd.adobe.com/view/dfc68ff3-e8d2-4335-4b95-da28b46cb658-a9f7/" class="btn-view">Bekijk TechDealsNL</a></p>
+													<p><a href="https://xd.adobe.com/view/dfc68ff3-e8d2-4335-4b95-da28b46cb658-a9f7/" target="_blank" class="btn-view">Bekijk TechDealsNL</a></p>
 												</div>
 											</div>
 										</div>
@@ -137,6 +155,8 @@
 							</div>
 						</div>
 					</div>
+
+					<div id="back" class="ibtn" onclick="upFunction()">Naar boven</div>
 
 					<div class="col-md-12">
 						<div class="work-entry-flex animate-box js-fullheight">
@@ -156,7 +176,7 @@
 												<div class="text-inner text-inner-left">
 													<h2><a href="work-single.html">FACE Stockholm</a></h2>
 													<p>Ontwerp van een digitaal mobiel omgeving zodat FACE Stockholm Generatie-Z kan bereiken. </p>
-													<p><a href="https://xd.adobe.com/view/189d31e7-7679-466d-6274-a35a9ef5409c-6eac/screen/040b7a98-88da-4e75-93fc-3c722a931796/animation-sign-in-?fullscreen" class="btn-view">Bekijk FACE Stockholm</a></p>
+													<p><a href="https://xd.adobe.com/view/189d31e7-7679-466d-6274-a35a9ef5409c-6eac/screen/040b7a98-88da-4e75-93fc-3c722a931796/animation-sign-in-?fullscreen" target="_blank" class="btn-view">Bekijk FACE Stockholm</a></p>
 												</div>
 											</div>
 										</div>
@@ -176,6 +196,8 @@
 									</div>
 								</div>
 							</div>
+
+
 							<div class="col-one-forth js-fullheight">
 								<div class="row no-gutters">
 									<div class="col-md-12 col-md-pull-12 no-gutters">
@@ -184,7 +206,7 @@
 												<div class="text-inner text-inner-right">
 													<h2><a href="work-single.html">Center of Expertise</a></h2>
 													<p>Voor dit project moest een website ontworpen worden dat gericht was op de docenten van de Haagse Hogeschool.</p>
-													<p><a href="https://aaandyh.github.io/Project-C/" class="btn-view">Bekijk ontwerp</a></p>
+													<p><a href="https://aaandyh.github.io/Project-C/" target="_blank" class="btn-view">Bekijk ontwerp</a></p>
 												</div>
 											</div>
 										</div>
@@ -212,7 +234,7 @@
 												<div class="text-inner text-inner-left">
 													<h2><a href="work-single.html">CMD Toolkit</a></h2>
 													<p>Een handig boekje dat wordt gebruikt als je bepaalde tools wil gebruiken tijdens je ontwerpprocess. Opdracht van Project D.</p>
-													<p><a href="https://imgur.com/a/CaHchNB" class="btn-view">Bekijk waaier</a></p>
+													<p><a href="https://pdfhost.io/v/fwELxYRvo_waaierandypdf.pdf" target="_blank" class="btn-view">Bekijk waaier</a></p>
 												</div>
 											</div>
 										</div>
