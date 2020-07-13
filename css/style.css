@@ -35,13 +35,14 @@ body {
     overflow-y: hidden; }
 
 a {
-  color: #F9CE00;
+  color: black;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover {
-    text-decoration: underline;
-    color: #b0e7fc; }
+    text-decoration: none;
+    color: orangered; }
+
   a:focus, a:active {
     outline: none; }
 
@@ -49,10 +50,6 @@ p, span {
   margin-bottom: 1.5em;
   font-weight: 400;
   font-family: "Karla", Arial, sans-serif; }
-
-ul, ol {
-  display: block;
-  margin-bottom: 1.5em; }
 
 .tag {
   font-size: 18px;
@@ -309,11 +306,11 @@ header {
   @media screen and (max-width: 768px) {
     header {
       padding: 2em 0; } }
-  header .colorlib-navbar-brand {
+.colorlib-navbar-brand {
     display: flex;
 
     }
-    header .colorlib-navbar-brand .colorlib-logo {
+ .colorlib-navbar-brand .colorlib-logo {
       font-size: 24px;
       text-transform: uppercase;
       color: black;
@@ -322,12 +319,15 @@ header {
       letter-spacing: 10px;
       display: block;
       text-align: center;
-      text-shadow: #white 0px 3px 2px
+      text-shadow: #white 0px 3px 2px;
+      z-index: 1;
     }
-      header .colorlib-navbar-brand .colorlib-logo:hover {
+ .colorlib-navbar-brand .colorlib-logo:hover {
+        z-index: 1;
         text-decoration: none !important; }
-      header .colorlib-navbar-brand .colorlib-logo:active, header .colorlib-navbar-brand .colorlib-logo:focus {
+ .colorlib-navbar-brand .colorlib-logo:active, header .colorlib-navbar-brand .colorlib-logo:focus {
         outline: none;
+        z-index: 1;
         text-decoration: none; }
 
 #colorlib-services,
@@ -697,6 +697,10 @@ header {
       border: 1px solid #000;
       padding: 7px;
       text-decoration: none; }
+
+btn-preview:hover{
+  color: #b0e7fc;
+}
 
 .article {
   display: block; }
@@ -1080,7 +1084,7 @@ header {
     .contact-info li i {
       display: table-cell;
       vertical-align: middle;
-      font-size: 16px;
+      font-size: 20px;
       color: rgba(0, 0, 0, 0.5); }
     .contact-info li a {
       color: #000; }
@@ -1113,7 +1117,7 @@ input[type="text"] {
   text-decoration: none !important; }
 
 .colorlib-social-icons i {
-  font-size: 50px;
+  font-size: 35px;
   color: #0b0b0b ;
   }
 
@@ -1230,21 +1234,44 @@ input[type="text"] {
 }
 
 #logowhite {
+  position: relative;
   color: white;
   text-shadow: #0b0b0b 2px 2px 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 10px;
+  display: block;
+  text-align: center;
+  z-index: 1;
+  top: -20px;
 }
 
 #logowhite1{
-  color: #0b0b0b;
-  text-shadow: #0b0b0b 1px 1px 1px;
+  text-shadow: #ffffff 1px 1px 1px;
+  position: relative;
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 10px;
+  display: block;
+  text-align: center;
+  z-index: 1;
+  top: -20px;
+
 }
 
 #logowhite1:hover{
-  color: red;
+  color: orangered;
+
 }
 
 #logowhite:hover {
   color: red;
+  z-index: 2;
 }
 
 * {
@@ -1278,7 +1305,7 @@ input[type="text"] {
 
 #txt-rotate {
   font-family: "Playfair Display", Georgia, serif;
-  color: orangered ;
+  color: #ff4500;
 }
 
 #andyh{
@@ -1383,6 +1410,10 @@ div.backBtn:hover span.bLine {
   top: 20px;
 }
 
+.backBtn{
+  position: ;
+}
+
 #terug{
   color: #3f3f3f;
   text-decoration: none;
@@ -1398,4 +1429,52 @@ div.backBtn:hover span.bLine {
 
 .icon-quote:before {
   content: "\e057";
+}
+
+#global-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  line-height: 150px;
+  -webkit-transition: height .5s, line-height .5s; /* Safari */
+  transition: height .5s, line-height .5s;
+  z-index: 2;
+}
+
+
+.scrolled-nav .site-title  {
+  font-size: 16px;
+}
+
+.nav-list {
+  margin-top: -15px;
+  color: black;
+}
+
+.nav-list li {
+  z-index: 1;
+  list-style: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-top;-20px;
+}
+
+.active {
+  color: #1b6d85;
+}
+
+.zwart{
+  color: black;
+}
+
+site-title {
+  display: inline-block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+
+}
+
+.scrolled-nav .site-title  {
+  font-size: 16px;
 }
