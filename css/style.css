@@ -1315,6 +1315,7 @@ input[type="text"] {
 
 #worktab{
   color: black;
+  z-index: 5;
 }
 
 #worktab:hover{
@@ -1433,10 +1434,10 @@ div.backBtn:hover span.bLine {
 
 #global-nav {
   position: absolute;
-  top: 0;
+  top: 20;
   width: 100%;
   color: #fff;
-  line-height: 150px;
+  line-height: 100px;
   -webkit-transition: height .5s, line-height .5s; /* Safari */
   transition: height .5s, line-height .5s;
   z-index: 2;
@@ -1457,7 +1458,8 @@ div.backBtn:hover span.bLine {
   list-style: none;
   display: inline-block;
   padding-left: 20px;
-  padding-top;-20px;
+  padding-top:-20px;
+  padding-bottom: 0px;
 }
 
 .active {
